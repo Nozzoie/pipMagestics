@@ -1,6 +1,7 @@
 app = FastAPI()
+
 # Загрузка обученной модели
-model_path = "laptopPriceModel.pkl"
+model_path = "laptop_price_model.pkl"
 model = joblib.load(model_path)
 
 @app.post("/predict/")
